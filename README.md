@@ -193,7 +193,6 @@ plt.show()
 ```
 <img width="706" height="527" alt="image" src="https://github.com/user-attachments/assets/849079ee-7c65-488c-8208-fff443fbca93" />
 
-
 ```
 from sklearn.preprocessing import QuantileTransformer
 qt=QuantileTransformer(output_distribution='normal',n_quantiles=891)
@@ -201,6 +200,7 @@ df["Moderate Negative Skew"]=qt.fit_transform(df[["Moderate Negative Skew"]])
 sm.qqplot(df["Moderate Negative Skew"],line='45')
 plt.show()
 ```
+
 <img width="703" height="530" alt="image" src="https://github.com/user-attachments/assets/3db60d3c-83a9-4b74-9424-aeb6dcbdbdb3" />
 
 ```
